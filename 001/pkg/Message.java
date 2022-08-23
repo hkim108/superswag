@@ -3,6 +3,12 @@ import java.util.*;
 import java.io.*;
 
 public class Message {
+	private String author;
+	private String subject;
+	private String body;
+	private int num;
+
+	private ArrayList<String> messageBoard = new ArrayList<String>();
 
 	// Default Constructor
 	public Message() {
@@ -11,7 +17,10 @@ public class Message {
 	
 	// Parameterized Constructor
 	public Message(String auth, String subj, String bod, int i) {
-		
+		author = auth;
+		subject = subj;
+		body = bod;
+		num = i;
 	}
 
 	// This function is responsbile for printing the Message
@@ -29,17 +38,17 @@ public class Message {
 
 	// Default function for inheritance
 	public boolean isReply(){
-		
+		return true; //
 	}
 
 	// Returns the subject String
 	public String getSubject(){
-		
+		return "h"; //
 	} 
 
 	// Returns the ID
 	public int getId(){
-		
+		return 1; //
 	}
 
 	// Adds a child pointer to the parent's childList.

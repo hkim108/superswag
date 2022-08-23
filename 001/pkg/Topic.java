@@ -11,11 +11,11 @@ public class Topic extends Message {
 
 	// Parameterized constructor
 	public Topic(String auth, String subj, String bod, int i) {
-
+		
 	}
 
 	// Returns if it's a reply (false)
 	public boolean isReply(){
-
+		return false; //
 	}
 }

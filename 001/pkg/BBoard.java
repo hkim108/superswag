@@ -119,11 +119,10 @@ public class BBoard {		// This is your main file that connects all classes.
 	// It will then be the responsibility of the Topic object to invoke the print function recursively on its own replies
 	// The BBoard display function will ignore all reply objects in its message list
 	private void display(){
-		System.out.println(messageList.size());
+		//System.out.println(messageList.size());
 		if (messageList.size() > 0) {
 			for (int c=0; c < messageList.size(); c++) {
 				if (!messageList.get(c).isReply()) {
-					//System.out.println("tdddsssssssdddd  ddssffestsfskdf");
 					System.out.println("\n------------------------------------------------------------");
 					messageList.get(c).print(0);
 					System.out.println("------------------------------------------------------------");
@@ -215,7 +214,6 @@ public class BBoard {		// This is your main file that connects all classes.
 			replyList.add(r);
 			messageList.add(r);
 			messageList.get(replyID-1).addChild(r);
-			System.out.println("message # is : " + r.getId());
 		}
 		else {
 			System.out.println("Invalid Message ID!");
